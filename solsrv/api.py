@@ -26,6 +26,9 @@ class Solsrv:
             return 'Document not found', 404
 
         return self.store[id]
-
+    
+    def queryStoreIds(self):
+        return {'ids':list(self.store.keys())}
+    
     def status(self):
         return {'len(store)': len(self.store)}

@@ -11,6 +11,7 @@ solsrv = api.Solsrv()
 api.getDocument = solsrv.getDocument
 api.addDocument = solsrv.addDocument
 api.addDocuments = solsrv.addDocuments
+api.queryStoreIds = solsrv.queryStoreIds
 api.status = solsrv.status
 
 app.add_api('solsrv.yaml')

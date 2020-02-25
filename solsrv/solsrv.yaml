@@ -40,6 +40,15 @@ paths:
             application/json: {}
           description: Status
       operationId: solsrv.api.status
+  /store:
+    get:
+      responses:
+        200:
+          content:
+            application/json: {}
+          description: ID Response
+      operationId: solsrv.api.queryStoreIds
+      summary: Get list of all keys in store
   /documents/{id}:
     get:
       parameters:
